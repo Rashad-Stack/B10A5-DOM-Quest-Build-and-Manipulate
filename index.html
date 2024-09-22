@@ -45,38 +45,40 @@
 
   <body class="font-lexend">
     <!-- @ HEADER -->
-    <header class="bg-secondary pb-5">
-      <div class="container lg:max-w-6xl mx-auto py-5 max-lg:px-4">
-        <nav
-          class="flex items-center justify-between flex-col sm:flex-row max-sm:gap-4">
-          <button
-            class="bg-primary text-dark-primary text-lg py-3 px-8 rounded-lg font-semibold">
-            Blog
-          </button>
+    <header class="sticky top-0 z-50">
+      <nav class="bg-secondary pb-5">
+        <div class="container lg:max-w-6xl mx-auto py-5 max-lg:px-4">
+          <div
+            class="flex items-center justify-between flex-col sm:flex-row max-sm:gap-4">
+            <button
+              class="bg-primary text-dark-primary text-lg py-3 px-8 rounded-lg font-semibold">
+              Blog
+            </button>
 
-          <!-- # Logo -->
-          <a href="#" class="flex gap-2 items-center">
-            <img
-              src="./assets/logo.png"
-              alt="logo"
-              width="30px"
-              class="object-contain" />
-            <h1 class="text-xl font-bold text-dark-primary">
-              Donate Bangladesh
-            </h1>
-          </a>
+            <!-- # Logo -->
+            <a href="#" class="flex gap-2 items-center">
+              <img
+                src="./assets/logo.png"
+                alt="logo"
+                width="30px"
+                class="object-contain" />
+              <h1 class="text-xl font-bold text-dark-primary">
+                Donate Bangladesh
+              </h1>
+            </a>
 
-          <div class="flex items-center gap-1">
-            <img src="./assets/coin.png" alt="coin" class="w-6 object-cover" />
-            <p class="text-dark-secondary text-xl"><span>5500</span> BDT</p>
+            <div class="flex items-center gap-1">
+              <img
+                src="./assets/coin.png"
+                alt="coin"
+                class="w-6 object-cover" />
+              <p class="text-dark-secondary text-xl"><span>5500</span> BDT</p>
+            </div>
           </div>
-        </nav>
-      </div>
-    </header>
+        </div>
+      </nav>
 
-    <!-- @ MAIN -->
-    <main>
-      <section class="mt-10">
+      <section class="bg-gray-50">
         <div class="container lg:max-w-6xl mx-auto py-5 max-lg:px-4">
           <div class="max-w-sm mx-auto flex justify-center gap-4">
             <button
@@ -91,7 +93,10 @@
           </div>
         </div>
       </section>
+    </header>
 
+    <!-- @ MAIN -->
+    <main>
       <section>
         <div class="container lg:max-w-6xl mx-auto py-5 max-lg:px-4">
           <!-- # Blogs -->
@@ -219,11 +224,48 @@
               </div>
             </div>
           </div>
+
+          <!-- # History -->
+          <div class="flex-col gap-8 hidden">
+            <div class="card border p-8">
+              <div class="card-body">
+                <h2 class="card-title">
+                  96500 Taka is Donated for famine-2024 at Feni, Bangladesh
+                </h2>
+                <p class="font-light text-dark-secondary">
+                  If a dog chews shoes whose shoes does he choose?
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <!-- # Modal -->
+      <section>
+        <dialog id="my_modal_1" class="modal">
+          <div class="modal-box flex flex-col justify-center items-center">
+            <h3 class="text-lg font-bold">Congrats!</h3>
+            <img
+              src="./assets/coin.png"
+              alt="coin"
+              class="w-10 object-cover mt-5" />
+            <p class="py-4 text-dark-secondary">
+              You have donate for humankind
+            </p>
+            <h3 class="text-lg font-bold">Successfully</h3>
+            <div class="modal-action">
+              <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close Confirmation</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
       </section>
     </main>
 
     <!-- @ FOOTER -->
-    <footer></footer>
+    <footer class="bg-secondary h-24"></footer>
   </body>
 </html>
