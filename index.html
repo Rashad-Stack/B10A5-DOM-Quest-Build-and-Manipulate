@@ -48,9 +48,9 @@
     <header class="sticky top-0 z-50">
       <nav class="bg-secondary pb-5">
         <div class="container lg:max-w-6xl mx-auto py-5 max-lg:px-4">
-          <div
-            class="flex items-center justify-between flex-col sm:flex-row max-sm:gap-4">
+          <div class="flex items-center justify-between">
             <button
+              id="blog-btn"
               class="bg-primary text-dark-primary text-lg py-3 px-8 rounded-lg font-semibold">
               Blog
             </button>
@@ -62,7 +62,7 @@
                 alt="logo"
                 width="30px"
                 class="object-contain" />
-              <h1 class="text-xl font-bold text-dark-primary">
+              <h1 class="text-xl font-bold text-dark-primary max-sm:hidden">
                 Donate Bangladesh
               </h1>
             </a>
@@ -72,7 +72,9 @@
                 src="./assets/coin.png"
                 alt="coin"
                 class="w-6 object-cover" />
-              <p class="text-dark-secondary text-xl"><span>5500</span> BDT</p>
+              <p class="text-dark-secondary text-xl">
+                <span id="balance">5500</span> BDT
+              </p>
             </div>
           </div>
         </div>
@@ -228,8 +230,8 @@
           </div>
 
           <!-- # History -->
-          <div id="history-tab" class="flex-col gap-8 hidden">
-            <div class="card border p-8">
+          <div id="history-tab" class="space-y-8 hidden">
+            <!-- <div class="card border p-8">
               <div class="card-body">
                 <h2 class="card-title">
                   96500 Taka is Donated for famine-2024 at Feni, Bangladesh
@@ -238,14 +240,14 @@
                   If a dog chews shoes whose shoes does he choose?
                 </p>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
 
       <!-- # Modal -->
       <section>
-        <dialog id="my_modal_1" class="modal">
+        <dialog id="modal" class="modal">
           <div class="modal-box flex flex-col justify-center items-center">
             <h3 class="text-lg font-bold">Congrats!</h3>
             <img
@@ -259,7 +261,7 @@
             <div class="modal-action">
               <form method="dialog">
                 <!-- if there is a button in form, it will close the modal -->
-                <button class="btn">Close Confirmation</button>
+                <button id="close-modal" class="btn">Close Confirmation</button>
               </form>
             </div>
           </div>

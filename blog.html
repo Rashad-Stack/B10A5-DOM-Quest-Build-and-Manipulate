@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/logo.png" type="image/png" />
+
+    <!-- Lexend fonts from google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet" />
+
+    <!-- Tailwind Integration with DaisyUI-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "rgb(180, 244, 97)",
+              secondary: "rgb(249, 247, 243)",
+              "dark-primary": "rgb(17, 17, 17)",
+              "dark-secondary": "rgba(17, 17, 17, 0.7)",
+            },
+
+            fontFamily: {
+              lexend: "Lexend", // Adds a new `font-display` class
+            },
+          },
+        },
+      };
+    </script>
+    <title>Blogs</title>
+  </head>
+  <body class="container mx-auto lg:max-w-6xl">
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" checked="checked" />
+      <div class="collapse-title text-xl font-medium">
+        Click to open this one and close others
+      </div>
+      <div class="collapse-content">
+        <p>hello</p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">
+        Click to open this one and close others
+      </div>
+      <div class="collapse-content">
+        <p>hello</p>
+      </div>
+    </div>
+    <div class="collapse collapse-arrow bg-base-200">
+      <input type="radio" name="my-accordion-2" />
+      <div class="collapse-title text-xl font-medium">
+        Click to open this one and close others
+      </div>
+      <div class="collapse-content">
+        <p>hello</p>
+      </div>
+    </div>
+  </body>
+</html>
