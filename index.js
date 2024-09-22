@@ -84,8 +84,3 @@ click("blog", "click", function (event) {
 click("close-modal", "click", function () {
   selector("modal").classList.remove("modal-open");
 });
-
-// Handle blog Button
-click("blog-btn", "click", function () {
-  window.location.href = "./blog.html";
-});

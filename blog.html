@@ -40,33 +40,45 @@
     </script>
     <title>Blogs</title>
   </head>
-  <body class="container mx-auto lg:max-w-6xl">
-    <div class="collapse collapse-arrow bg-base-200">
-      <input type="radio" name="my-accordion-2" checked="checked" />
-      <div class="collapse-title text-xl font-medium">
-        Click to open this one and close others
-      </div>
-      <div class="collapse-content">
-        <p>hello</p>
-      </div>
-    </div>
-    <div class="collapse collapse-arrow bg-base-200">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title text-xl font-medium">
-        Click to open this one and close others
-      </div>
-      <div class="collapse-content">
-        <p>hello</p>
-      </div>
-    </div>
-    <div class="collapse collapse-arrow bg-base-200">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title text-xl font-medium">
-        Click to open this one and close others
-      </div>
-      <div class="collapse-content">
-        <p>hello</p>
-      </div>
-    </div>
+  <body>
+    <header class="sticky top-0 z-50">
+      <nav class="bg-secondary pb-5">
+        <div class="container lg:max-w-6xl mx-auto py-5 max-lg:px-4">
+          <div class="flex items-center justify-between">
+            <a
+              href="./index.html"
+              id="home-btn"
+              class="bg-primary text-dark-primary text-lg py-3 px-8 rounded-lg font-semibold">
+              Home
+            </a>
+
+            <!-- # Logo -->
+            <a href="#" class="flex gap-2 items-center">
+              <img
+                src="./assets/logo.png"
+                alt="logo"
+                width="30px"
+                class="object-contain" />
+              <h1 class="text-xl font-bold text-dark-primary max-sm:hidden">
+                Donate Bangladesh
+              </h1>
+            </a>
+
+            <div class="flex items-center gap-1">
+              <img
+                src="./assets/coin.png"
+                alt="coin"
+                class="w-6 object-cover" />
+              <p class="text-dark-secondary text-xl">
+                <span id="balance">5500</span> BDT
+              </p>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- @ Scripts -->
+    <!-- <script src="./blog.js"></script> -->
   </body>
 </html>
