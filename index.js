@@ -50,11 +50,12 @@ click("blog", "click", function (event) {
       .children[0];
 
   // Set the Donation amount to the blog post card
-  donationEl.innerText = parseFloat(donationEl.innerText) + value;
+  donationEl.innerText = (parseFloat(donationEl.innerText) + value).toFixed(2);
 
   // Set total remaining balance
-  selector("balance").innerText =
-    parseFloat(selector("balance").innerText) - value;
+  selector("balance").innerText = (
+    parseFloat(selector("balance").innerText) - value
+  ).toFixed(2);
 
   // Clear the input field
   event.target.previousElementSibling.value = "";
