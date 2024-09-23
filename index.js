@@ -65,10 +65,10 @@ click("blog", "click", function (event) {
 
   // History card html
   const html = `
-      <div class="card border p-8">
+      <div class="card border lg:p-8">
         <div class="card-body">
           <h2 class="card-title">
-            ${value} Taka is ${
+            ${value.toFixed(2)} Taka is ${
     event.target.parentElement.parentElement.children[1].innerText
   }
           </h2>
