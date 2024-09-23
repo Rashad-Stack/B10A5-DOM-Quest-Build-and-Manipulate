@@ -29,32 +29,34 @@ function toggleTab(event) {
 click("history", "click", toggleTab);
 click("donation", "click", toggleTab);
 
-// @ BLOG POSTS
+// @ BLOG POSTS DONATION
 click("blog", "click", function (event) {
-  console.log(event.target.parentElement.parentElement.children[1].innerText);
-
   // if not a button return
   if (event.target.tagName !== "BUTTON") return;
+
+  // Get the donation amount
   const value = isNaN(event.target.previousElementSibling.value)
     ? 0
     : parseFloat(event.target.previousElementSibling.value);
 
-  if (!value || value < 0) return alert("Invalid Input");
+  if (!value || value < 0) return alert("Invalid Donation Amount!");
+
+  // * Set the donation
+  if (parseFloat(selector("balance").innerText) < value)
+    return alert("Insufficient Balance To Donate!");
+
   const donationEl =
     event.target.parentElement.parentElement.children[0].children[1]
       .children[0];
 
-  // Set the donation
-  if (parseFloat(selector("balance").innerText) < value)
-    return alert("Insufficient Balance");
-
+  // Set the Donation amount to the blog post card
   donationEl.innerText = parseFloat(donationEl.innerText) + value;
 
-  // Set remaining balance
+  // Set total remaining balance
   selector("balance").innerText =
     parseFloat(selector("balance").innerText) - value;
 
-  // Clear the input
+  // Clear the input field
   event.target.previousElementSibling.value = "";
 
   // # Open Modal

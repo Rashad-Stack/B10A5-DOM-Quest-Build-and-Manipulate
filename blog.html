@@ -46,7 +46,7 @@
         <div class="container lg:max-w-6xl mx-auto py-5 max-lg:px-4">
           <div class="flex items-center justify-between">
             <a
-              href="./index.html"
+              href="/"
               id="home-btn"
               class="bg-primary text-dark-primary text-lg py-3 px-8 rounded-lg font-semibold">
               Home
@@ -77,8 +77,85 @@
         </div>
       </nav>
     </header>
-
-    <!-- @ Scripts -->
-    <!-- <script src="./blog.js"></script> -->
+    <main>
+      <!-- @FAQ SECTION -->
+      <section class="mt-10">
+        <div class="container mx-auto lg:max-w-6xl max-lg:px-4">
+          <h1 class="text-2xl font-bold py-4">Frequently Ask Question</h1>
+          <div class="join join-vertical w-full">
+            <div
+              class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                What is the Document Object Model (DOM)?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  The Document Object Model (DOM) is a programming interface for
+                  web documents. It represents the page so that programs can
+                  change the document structure, style, and content. The DOM
+                  represents the document as nodes and objects. That way,
+                  programming languages can connect to the page.
+                </p>
+              </div>
+            </div>
+            <div
+              class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">
+                How do you select an element from the DOM?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  You can select an element from the DOM using the
+                  <code class="font-bold italic">document.querySelector()</code>
+                  method. This method returns the first element that matches a
+                  specified CSS selector in the document.
+                </p>
+              </div>
+            </div>
+            <div
+              class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">
+                What is event delegation in the context of the DOM, and why is
+                it useful?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Event delegation is a technique involving adding event
+                  listeners to a parent element instead of adding them to the
+                  descendant elements. The listener will fire whenever the event
+                  is triggered on the descendant elements due to event bubbling
+                  up the DOM. It is useful because it allows you to add a single
+                  event listener to a parent element to manage many elements
+                  with fewer event listeners.
+                </p>
+              </div>
+            </div>
+            <div
+              class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">
+                How do you manipulate an element's attributes and styles using
+                the DOM?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  You can manipulate an element's attributes and styles using
+                  the <code class="font-bold italic">setAttribute()</code> and
+                  <code class="font-bold italic">style</code> properties,
+                  respectively. The
+                  <code class="font-bold italic">setAttribute()</code> method
+                  sets the value of an attribute on the specified element, while
+                  the <code class="font-bold italic">style</code> property sets
+                  the inline style of an element.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
